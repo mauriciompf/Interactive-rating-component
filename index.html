@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="./design/style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+<body>
+  <main class="main">
+    <!-- Rating state start -->
+    <article class="main__card-rating">
+      <div class="main__card-icon-start">
+        <img src="images/icon-star.svg" alt="">
+      </div>
+      <h3 class="main__card--title">
+        How did we do?
+      </h3>
+      <p class="main__card-paragraph">
+        Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+      </p>
+      <div class="main__card-reviews">
+        <button type="button" class="main__card-review-button">1</button>
+        <button type="button" class="main__card-review-button">2</button>
+        <button type="button" class="main__card-review-button">3</button>
+        <button type="button" class="main__card-review-button">4</button>
+        <button type="button" class="main__card-review-button">5</button>
+      </div>
+      <button type="submit" class="main__card-submit">
+        Submit
+      </button>
+    </article>
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+    <article class="main__card-thank">
+      <img src="images/illustration-thank-you.svg" alt="thank you" class="main__card-image">
+      <span class="main__card-info">
+        You selected <span class="main__card-info-rated"></span> out of 5
+      </span>
+      <h3 class="main__card-title">
+        Thank you!
+      </h3>
+      <p class="main__card-paragraph">
+        We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
+      </p>
+    </article>
+    <!-- Thank you state end -->
+  </main>
+  <footer class="footer">
+    <div class="footer__attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/mauriciompf">Maurício F.</a>.
+    </div>
+  </footer>
+  <script src="design/app.js"></script>
+</body>
+</html>

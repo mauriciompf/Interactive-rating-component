@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+:root {
+    /* Colors */
+    --clr-primary-orange: hsl(25, 97%, 53%);
+    --clr-neutral-white: hsl(0, 0%, 100%);
+    --clr-neutral-light-grey: hsl(217, 12%, 63%);
+    --clr-neutral-medium-grey: hsl(216, 12%, 54%);
+    --clr-neutral-dark-blue: hsl(213, 19%, 18%);
+    --clr-neutral-very-dark-blue: hsl(216, 12%, 8%);
+
+    /* Spaces */
+    --line-height: 1.6;
+    --space-s: 1rem;
+    --space-m: 2rem;
+}
+
+/* --- GENERAL STYLES --- */
+body {
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+
+    --clr-button: var(--clr-primary-orange);
+    --clr-paragraphs: var(--clr-neutral-medium-grey);
+    --clr-numbers: var(--clr-neutral-light-grey);
+    --clr-border-fill: var(--clr-neutral-medium-grey);
+    --clr-title: var(--clr-neutral-white);
+    --clr-bg-card: var(--clr-neutral-dark-blue);
+    --clr-bg-main: var(--clr-neutral-very-dark-blue);
+
+    --space-card: var(--space-m);
+    --space-elements: var(--space-s);
+}
+
+button,
+img {
+    display: block;
+}
+
+button {
+    cursor: pointer;
+    font: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* --- MAIN --- */
+
+/* --- FOOTER --- */
+.footer__attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.footer__attribution a {
+    color: hsl(228, 45%, 44%);
+}
