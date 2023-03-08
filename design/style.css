@@ -106,6 +106,12 @@ img {
     color: var(--clr-numbers);
 }
 
+.main__card-review-button:is(:active, :hover, :focus) {
+    background-color: var(--clr-button);
+    color: var(--clr-bg-main);
+    font-weight: 700;
+}
+
 .main__card-submit {
     min-width: 100%;
     padding: var(--space-s);
@@ -116,22 +122,34 @@ img {
     letter-spacing: .1rem;
 }
 
+.main__card-submit:is(:hover, :focus) {
+    background-color: var(--clr-bg-main);
+    font-weight: 700;
+}
+
 .main__card-thank {
     display: none;
     text-align: center;
 }
 
+.main__card-thank--active {
+    display: block;
+}
+
+.main__card-rating--not-active {
+    display: none;
+}
+
 .main__card-image {
     display: grid;
     place-items: center;
-
+    margin-bottom: var(--space-divs-elements);
 }
 
 .main__card-info {
     background-color: var(--clr-bg-numbers);
     color: var(--clr-primary-orange);
     padding: .5rem 1rem;
-    margin: var(--space-divs-elements) 0;
     opacity: .9;
     border-radius: 5rem;
 }
