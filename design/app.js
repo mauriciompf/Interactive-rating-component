@@ -5,8 +5,13 @@ const buttons = document.querySelectorAll(".main__card-review-button");
 const span = document.querySelector(".main__card-info-rated");
 
 const handleSubmitButtonClick = () => {
-    thankCard.classList.add("main__card-thank--active");
-    ratingCard.classList.add("main__card-rating--not-active");
+    const selectedRating = parseInt(span.textContent);
+    if (isNaN(selectedRating)) {
+        alert('Please select a rating before submitting.');
+    } else {
+        thankCard.classList.add("main__card-thank--active");
+        ratingCard.classList.add("main__card-rating--not-active");
+    }
 }
 
 const handleReviewButtonClick = e => {
